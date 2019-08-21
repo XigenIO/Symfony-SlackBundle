@@ -10,7 +10,7 @@
     "require" : {
         "php": "^7.2",
         "symfony/framework-bundle": "~3.4|~4",
-        "xigen.io/guzzle-bundle": "^1",
+        "xigen.io/guzzle-bundle": "^1"
     },
     "autoload" : {
         "psr-4" : {
