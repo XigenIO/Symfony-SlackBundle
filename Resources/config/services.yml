@@ -1,0 +1,7 @@
+services:
+    Xigen\Bundle\SlackBundle\Service\Slack:
+        public: true
+        autowire: true
+        arguments:
+            $url: '%slack_url%'
+            $channel: '%slack_channel%'

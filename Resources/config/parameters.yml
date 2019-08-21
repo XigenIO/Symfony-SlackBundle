@@ -1,0 +1,3 @@
+parameters:
+    slack_channel: '%env(slack_channel)%'
+    slack_url: '%env(slack_url)%'

@@ -1,0 +1,21 @@
+{
+    "name" : "xigen.io/slack-bundle",
+    "description" : "A Symfony bundle for sending Slack messages",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Chris Hilsdon",
+        "email" : "chrish@xigen.co.uk",
+        "homepage": "https://xigen.co.uk"
+    }],
+    "require" : {
+        "php": "^7.2",
+        "symfony/framework-bundle": "~3.4|~4",
+        "xigen.io/guzzle-bundle": "^1",
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Xigen\\Bundle\\SlackBundle\\" : ""
+        }
+    }
+}
+
