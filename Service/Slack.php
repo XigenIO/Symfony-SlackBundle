@@ -8,7 +8,7 @@ use Xigen\Bundle\GuzzleBundle\Service\GuzzleClient;
 class Slack
 {
     /**
-     * Slack webhock URL
+     * Slack webhook URL
      * @var string
      */
     protected $url;
@@ -30,6 +30,25 @@ class Slack
         $this->guzzle = $guzzle;
         $this->url = $url;
         $this->channel = $channel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * @param string $username
+     * @return $this
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+
+        return $this;
     }
 
     /**

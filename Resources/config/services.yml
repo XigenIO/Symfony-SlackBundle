@@ -2,6 +2,15 @@ services:
     Xigen\Bundle\SlackBundle\Service\Slack:
         public: true
         autowire: true
+        autoconfigure: true
+        arguments:
+            $url: '%slack_url%'
+            $channel: '%slack_channel%'
+
+    Xigen\Bundle\SlackBundle\Service\SlackDynamic:
+        public: true
+        autowire: true
+        autoconfigure: true
         arguments:
             $url: '%slack_url%'
             $channel: '%slack_channel%'
