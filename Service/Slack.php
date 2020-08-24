@@ -59,7 +59,7 @@ class Slack
     public function send($message): bool
     {
         // Don't send a message if the Slack channel or username isn't valid
-        if (if ($this->channel === null || $this->username === null || $this->channel === '' || $this->username === '') {
+        if ($this->channel === null || $this->username === null || $this->channel === '' || $this->username === '') {
             return false;
         }
 
